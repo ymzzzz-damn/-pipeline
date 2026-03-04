@@ -1,7 +1,7 @@
 # -pipeline
 中文数据来源（resource of Chinese data）
-# 1. 医疗 - HuggingFace Mirror "https://huggingface.co/datasets/Aunderline/CMeEE-V2/resolve/main/CMeEE-V2_train.js# 新代码 (GitHub 源，更稳定且无需 Token)
-# 2. 新闻 - OYE93 Chinese-NLP-Corpus (BIO格式） "https://raw.githubusercontent.com/OYE93/Chinese-NLP-Corpus/master/NER/MSRA/msra_train_bio.txt"
+# 1. 医疗 - HuggingFace Mirror "https://huggingface.co/datasets/Aunderline/CMeEE-V2/resolve/main/CMeEE-V2_train.js# 
+# 2. 新闻 - OYE93 Chinese-NLP-Corpus  "https://raw.githubusercontent.com/OYE93/Chinese-NLP-Corpus/master/NER/MSRA/msra_train_bio.txt"
 # 3. 简历 - https://github.com/jiesutd/LatticeLSTM/tree/master/ResumeNER/train.char.bmes
 # 4. 生活 - https://github.com/hltcoe/golden-horse/tree/master/data/weiboNER_2nd_conll.train
 

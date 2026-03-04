@@ -18,13 +18,11 @@ def save_to_word(texts, filename_prefix, title):
     if not texts:
         print(f" {filename_prefix} 数据为空，跳过。")
         return
-
-    # 简单去重 + 过滤过短的句子
     texts = list(set([t.strip() for t in texts if len(t.strip()) > 2]))
     total = len(texts)
     print(f"提取到 {total} 条有效数据，正在生成 Word...")
 
-    # 分卷保存，防止 Word 太大卡死
+    # 分卷保存
     BATCH_SIZE = 3000
     for i in range(0, total, BATCH_SIZE):
         batch_texts = texts[i: i + BATCH_SIZE]
@@ -50,7 +48,6 @@ def process_bio_file(filename, output_prefix, title):
 
     if not os.path.exists(file_path):
         print(f" 错误: 找不到文件 {file_path}")
-        print(f" 请确认脚本是在 'pipeline_solution' 目录下运行的。")
         return
 
     texts = []
@@ -77,15 +74,15 @@ def process_bio_file(filename, output_prefix, title):
         save_to_word(texts, output_prefix, title)
 
     except Exception as e:
-        print(f"   ❌ 解析出错: {e}")
+        print(f" 解析出错: {e}")
 
 
 
 def main():
-    print(f">>> 🚀 开始处理文件夹: {os.path.abspath(WORK_DIR)}")
+    print(f">>>开始处理文件夹: {os.path.abspath(WORK_DIR)}")
 
     if not os.path.exists(WORK_DIR):
-        print(f"   ❌ 错误: 找不到目录 {WORK_DIR}")
+        print(f" 错误: 找不到目录 {WORK_DIR}")
         return
     process_bio_file(FILE_RESUME, "Dataset_HR_Resume", "中文简历人事数据")
 
@@ -93,7 +90,7 @@ def main():
 
     process_bio_file(FILE_WEIBO, "Dataset_Life_Weibo", "中文生活化微博数据")
 
-    print("\n>>> 🎉 全部完成！请打开 input_processcn 文件夹查看生成的 Word 文档。")
+    print("\n>>> 全部完成！请打开 input_processcn 文件夹查看生成的 Word 文档。")
 
 
 if __name__ == "__main__":

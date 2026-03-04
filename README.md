@@ -31,8 +31,8 @@
 * `gui.py`: (如果已包含) 提供 Tkinter 编写的用户交互界面。
 * 数据预处理模块:
   * `convert.py`: 处理 Adult 与 Heart Disease 等结构化数据集，转换为统一测试格式。
-  * `deal.py`: Enron Email 英文语料清洗与批量切分脚本。
-  * `download_cn.py`: 中文 CMeEE (医疗)、MSRA (新闻) 等 BIO/BMES 格式数据集的清洗与 Word 构建脚本。
+  * `deal_en.py`: Enron Email 英文语料清洗与批量切分脚本。
+  * `deal_cn.py`: 中文 CMeEE (医疗)、MSRA (新闻) 等 BIO/BMES 格式数据集的清洗与 Word 构建脚本。
 
 快速开始 (Quick Start)
 

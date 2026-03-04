@@ -8,7 +8,7 @@ from docx import Document
 import os
 import re
 
-CSV_PATH = "./input_life/emails.csv"
+CSV_PATH = ".//emails.csv"
 OUTPUT_DIR = "./input_life"
 EMAILS_PER_DOCX = 5000
 
@@ -61,4 +61,5 @@ def convert_all_emails():
 
 
 if __name__ == "__main__":
+
     convert_all_emails()

@@ -39,6 +39,7 @@
 # 1. 环境依赖（environment dependent)
 ```bash
 pip install torch transformers pandas openpyxl python-docx PyMuPDF pycryptodome nltk
+```
 
 # 2. 数据集准备与目录映射 (Data Preparation)
 如果您希望重新运行数据预处理脚本 (`data_preprocessing_scripts/` 目录下的内容)，请先从上述官方链接下载原始数据集，并**解压/放置到指定的本地目录中**，提取训练集中的核心数据文件。

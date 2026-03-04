@@ -1,9 +1,13 @@
 # -pipeline
-中文数据来源
-# 1. 医疗 - 来源: HuggingFace Mirror "https://huggingface.co/datasets/Aunderline/CMeEE-V2/resolve/main/CMeEE-V2_train.js# 新代码 (GitHub 源，更稳定且无需 Token)
-# 2. 新闻 - 来源: OYE93 Chinese-NLP-Corpus (BIO格式） "https://raw.githubusercontent.com/OYE93/Chinese-NLP-Corpus/master/NER/MSRA/msra_train_bio.txt"
-# 3. 简历 - 来源：https://github.com/jiesutd/LatticeLSTM/tree/master/ResumeNER/train.char.bmes
-# 4. 生活 - 来源：https://github.com/hltcoe/golden-horse/tree/master/data/weiboNER_2nd_conll.train
+中文数据来源（resource of Chinese data）
+# 1. 医疗 - HuggingFace Mirror "https://huggingface.co/datasets/Aunderline/CMeEE-V2/resolve/main/CMeEE-V2_train.js# 新代码 (GitHub 源，更稳定且无需 Token)
+# 2. 新闻 - OYE93 Chinese-NLP-Corpus (BIO格式） "https://raw.githubusercontent.com/OYE93/Chinese-NLP-Corpus/master/NER/MSRA/msra_train_bio.txt"
+# 3. 简历 - https://github.com/jiesutd/LatticeLSTM/tree/master/ResumeNER/train.char.bmes
+# 4. 生活 - https://github.com/hltcoe/golden-horse/tree/master/data/weiboNER_2nd_conll.train
+
+英文数据来源（resource of English data）
+# 1. Enron Email Dataset - https://www.cs.cmu.edu/~enron/(CMU)
+# 2. Heart Disease Dataset - https://archive.ics.uci.edu/dataset/45/heart-disease（UCI)
 
 # Semantic-Preserving Edge Data Sanitization System
 # 具有语义保真的边端设备文件脱敏与返脱敏系统
